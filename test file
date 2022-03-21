@@ -1,0 +1,31 @@
+using namespace std;
+#include "Area.h"
+#include <cmath>
+#include <iostream>
+
+int main () { 
+    
+    //The three input variables being initialized
+   double input_base1 = 0.0; 
+    double input_base2 = 0.0;
+    double input_height = 0.0; 
+    
+    //Takes user input and assigns them to the variables
+    cout << "Enter a measurement for base 1 in inches : ";
+    cin >> input_base1;
+    cout << "Enter a measurement for base 2 in inches : ";
+    cin >> input_base2;
+    cout << "Enter a measurement for height in inches : ";
+    cin >> input_height;
+    
+    //Creates an Area instance using our input variables
+    Area a1(input_base1, input_base2, input_height);
+    
+    //Calls the computeArea Method with our instance
+    double area = a1.computeArea(input_base1, input_base2, input_height);
+    
+    //Prints the results
+    cout << "The area of a trapezoid with the following information...\n\nBase1: " << input_base1 
+            << " inches\nBase2: " << input_base2 << " inches\nHeight: " << input_height << " inches\n\n...has an area of " 
+            << area << " square feet." << endl;
+};
