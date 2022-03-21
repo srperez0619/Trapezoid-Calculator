@@ -1,2 +1,3 @@
 # Trapezoid-Calculator
-A calculator used for calculating the area of a trapezoid
+A calculator used for calculating the area of a trapezoid written in C++
+
